@@ -3,6 +3,8 @@
 Spotify App for getting recommendations based on music genre.
 part of the code copied from spotify tutorial. 
 
+run "npm install" to install all dependencies.
+
 Usage requires spotify account and application registeration.
 
 See instructions from spotify tutorial:
