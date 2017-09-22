@@ -1,0 +1,25 @@
+{
+  "name": "my-favorite-songs",
+  "version": "1.0.0",
+  "description": "spotify app to create playlist based on your favorite song",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "keywords": [
+    "spotify"
+  ],
+  "author": "Jani Iivari <jani.iivari@digia.com>",
+  "license": "IPL-1.0",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "isarray": "^2.0.2",
+    "querystring": "^0.2.0",
+    "request": "^2.82.0",
+    "uuid": "^3.1.0"
+  }
+}
