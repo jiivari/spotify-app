@@ -221,3 +221,6 @@ app.get('/refresh_token', function(req, res) {
 
 
 app.listen(port, ip);
+console.log('Server running on http://%s:%s', ip, port);
+
+module.exports(app);
