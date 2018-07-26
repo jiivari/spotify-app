@@ -3,7 +3,7 @@ var request = require('request'); // "Request" library
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 var app = express();
-var port = 8080;
+var port = 8888;
 var uuid = require('uuid');
 var bodyParser = require('body-parser')
 require('dotenv').config();
@@ -218,5 +218,5 @@ app.get('/refresh_token', function(req, res) {
   });
 });
 
-console.log('Listening on ' + process.env.PORT || port);
-app.listen(process.env.PORT || port);
+//console.log('Listening on ' + process.env.OPENSHIFT_NODEJS_PORT || port);
+app.listen(process.env.OPENSHIFT_NODEJS_PORT || port);
