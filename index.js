@@ -3,7 +3,8 @@ var request = require('request'); // "Request" library
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 var app = express();
-var port = 8888;
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
 var uuid = require('uuid');
 var bodyParser = require('body-parser')
 require('dotenv').config();
@@ -218,5 +219,5 @@ app.get('/refresh_token', function(req, res) {
   });
 });
 
-//console.log('Listening on ' + process.env.OPENSHIFT_NODEJS_PORT || port);
-app.listen(process.env.OPENSHIFT_NODEJS_PORT || port);
+
+app.listen(port, ip);
