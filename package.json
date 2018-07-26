@@ -18,6 +18,7 @@
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "fresh": "^0.5.2",
+    "hoek": "^5.0.3",
     "isarray": "^2.0.2",
     "querystring": "^0.2.0",
     "request": "^2.82.0",
